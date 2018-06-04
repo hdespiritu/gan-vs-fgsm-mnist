@@ -1,0 +1,22 @@
+
+
+NON-LINEAR HIDDEN LAYER <==> UNIVERSAL FUNCTION APPROXIMATOR
+
+MNIST
+cleverhans-fgsm-cnn: 64, 128, 256
+cleverhans-bbox-fgsm-cnn: 
+
+
+TODO:
+	(TASK1) Generate GAN images by training on (0-30,000) for MNIST and test robustness on classifier
+	trained on (30,001 - 50,000 && 20,000 adversarial) using a mix of (50,001 - 60,000 & 10,000 adversarial)
+
+
+CONSIDERATIONS:
+	-ensure that GAN training examples does NOT overlap with victim-classifier training examples
+		(ONCE: do a hash of images and compare)
+	-ensure victim-classifier training is comparable across different attack scenarios in 
+	  	terms of the number of training examples.
+
+TODO:
+	(TASK2) How to add perturbation instead of generating image?

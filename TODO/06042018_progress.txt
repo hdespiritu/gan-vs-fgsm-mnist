@@ -1,0 +1,16 @@
+5/26 MNIST: GAN vs FGSM
+	CURRENT PROGRESS:
+		-Got 'naive' GAN ipython to run for mnist & cifar10
+			(Need to test by comparing to TFGAN or some other well-tested implementation)
+
+		-mnist cleverhas fgsm tutorial code runs fine (Not exactly sure what NN architecture it's using though)
+			(Note: there's also a keras implementation provided)
+		-cifar10 cleverhans fgsm keras tutorial code runs fine (Not sure what NN architecture it's using)
+	TODO:
+		-Get Discriminator vs FGSM implementation (see Kaggle NIPS 2017 Adversarial )
+		
+5/27
+		-Get Discriminator vs FGSM implementation (see Kaggle NIPS 2017 Adversarial )
+		(inceptionv3 Checkpoint file for kaggle-adversarialLearing-gettingStarted is NOT LOADING)
+
+		-
