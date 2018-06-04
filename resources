@@ -1,0 +1,12 @@
+TENSORBOARD
+https://www.tensorflow.org/programmers_guide/summaries_and_tensorboard
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_with_summaries.py
+
+TFDBG
+https://www.tensorflow.org/programmers_guide/debugger
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/debug/examples/debug_mnist.py
+
+Towards Deep Learning Models Resistant to Adversarial Attacks
+https://arxiv.org/pdf/1706.06083.pdf
+https://github.com/tensorflow/cleverhans/tree/master/examples/multigpu_advtrain
+https://people.csail.mit.edu/madry/lab/
