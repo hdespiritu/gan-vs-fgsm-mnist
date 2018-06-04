@@ -1,0 +1,63 @@
+python ex_cifar10_tf.py
+C:\Python\Python35\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Using TensorFlow backend.
+2018-05-28 00:07:02.190030: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-05-28 00:07:02.483665: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1105] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.645
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.62GiB
+2018-05-28 00:07:02.486908: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Downloading data from https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+170500096/170498071 [==============================] - 141s 1us/step
+X_train shape: (50000, 32, 32, 3)
+50000 train samples
+10000 test samples
+Defined TensorFlow model graph.
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\utils_tf.py:37: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+Test accuracy on legitimate test examples: 0.4906
+Test accuracy on legitimate test examples: 0.5499
+Test accuracy on legitimate test examples: 0.5795
+Test accuracy on legitimate test examples: 0.6106
+Test accuracy on legitimate test examples: 0.6318
+Test accuracy on legitimate test examples: 0.6353
+Test accuracy on legitimate test examples: 0.6349
+Test accuracy on legitimate test examples: 0.6445
+Test accuracy on legitimate test examples: 0.6558
+Test accuracy on legitimate test examples: 0.6558
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\attacks.py:208: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\attacks_tf.py:55: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Test accuracy on adversarial examples: 0.0901
+Repeating the process, using adversarial training
+Test accuracy on legitimate test examples: 0.4556
+Test accuracy on adversarial examples: 0.3109
+Test accuracy on legitimate test examples: 0.5157
+Test accuracy on adversarial examples: 0.4174
+Test accuracy on legitimate test examples: 0.56
+Test accuracy on adversarial examples: 0.4772
+Test accuracy on legitimate test examples: 0.5745
+Test accuracy on adversarial examples: 0.5313
+Test accuracy on legitimate test examples: 0.5908
+Test accuracy on adversarial examples: 0.5537
+Test accuracy on legitimate test examples: 0.6217
+Test accuracy on adversarial examples: 0.5837
+Test accuracy on legitimate test examples: 0.6209
+Test accuracy on adversarial examples: 0.5879
+Test accuracy on legitimate test examples: 0.6318
+Test accuracy on adversarial examples: 0.5986
+Test accuracy on legitimate test examples: 0.6351
+Test accuracy on adversarial examples: 0.5879
+Test accuracy on legitimate test examples: 0.6444
+Test accuracy on adversarial examples: 0.6214
+Test accuracy on adversarial examples: 0.6214

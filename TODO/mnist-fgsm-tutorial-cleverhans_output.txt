@@ -1,0 +1,66 @@
+python mnist_tutorial_tf.py
+2018-05-27 22:04:14.474390: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-05-27 22:04:14.809284: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1105] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.645
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.62GiB
+2018-05-27 22:04:14.814381: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting /tmp/train-images-idx3-ubyte.gz
+Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Successfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Successfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (60000, 28, 28, 1)
+X_test shape: (10000, 28, 28, 1)
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans_tutorials\tutorial_models.py:79: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\utils_tf.py:37: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+[INFO 2018-05-27 22:04:42,645 cleverhans] Epoch 0 took 15.529339790344238 seconds
+Test accuracy on legitimate examples: 0.9886
+[INFO 2018-05-27 22:05:14,365 cleverhans] Epoch 1 took 29.921384572982788 seconds
+Test accuracy on legitimate examples: 0.9896
+[INFO 2018-05-27 22:05:47,930 cleverhans] Epoch 2 took 31.73062753677368 seconds
+Test accuracy on legitimate examples: 0.9916
+[INFO 2018-05-27 22:06:19,041 cleverhans] Epoch 3 took 29.34207057952881 seconds
+Test accuracy on legitimate examples: 0.9913
+[INFO 2018-05-27 22:06:51,411 cleverhans] Epoch 4 took 30.58318066596985 seconds
+Test accuracy on legitimate examples: 0.9923
+[INFO 2018-05-27 22:07:23,326 cleverhans] Epoch 5 took 30.01951575279236 seconds
+Test accuracy on legitimate examples: 0.9927
+[INFO 2018-05-27 22:07:25,335 cleverhans] Completed model training.
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\attacks.py:208: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Test accuracy on adversarial examples: 0.1169
+
+Repeating the process, using adversarial training
+[INFO 2018-05-27 22:08:41,159 cleverhans] Epoch 0 took 68.24344992637634 seconds
+Test accuracy on legitimate examples: 0.9790
+Test accuracy on adversarial examples: 0.8537
+[INFO 2018-05-27 22:13:56,880 cleverhans] Epoch 1 took 50.82457256317139 seconds
+Test accuracy on legitimate examples: 0.9883
+Test accuracy on adversarial examples: 0.9010
+[INFO 2018-05-27 22:15:12,320 cleverhans] Epoch 2 took 68.21569037437439 seconds
+Test accuracy on legitimate examples: 0.9891
+Test accuracy on adversarial examples: 0.9318
+[INFO 2018-05-27 22:16:27,254 cleverhans] Epoch 3 took 67.45467782020569 seconds
+Test accuracy on legitimate examples: 0.9901
+Test accuracy on adversarial examples: 0.9231
+[INFO 2018-05-27 22:17:41,751 cleverhans] Epoch 4 took 67.37588882446289 seconds
+Test accuracy on legitimate examples: 0.9904
+Test accuracy on adversarial examples: 0.9331
+[INFO 2018-05-27 22:18:57,167 cleverhans] Epoch 5 took 67.90977144241333 seconds
+Test accuracy on legitimate examples: 0.9922
+Test accuracy on adversarial examples: 0.9210
+[INFO 2018-05-27 22:19:04,255 cleverhans] Completed model training.

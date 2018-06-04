@@ -1,0 +1,128 @@
+python mnist_blackbox.py
+C:\Python\Python35\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2018-05-28 00:33:36.406536: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2018-05-28 00:33:36.715313: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1105] Found device 0 with properties:
+name: GeForce GTX 1070 major: 6 minor: 1 memoryClockRate(GHz): 1.645
+pciBusID: 0000:01:00.0
+totalMemory: 8.00GiB freeMemory: 6.62GiB
+2018-05-28 00:33:36.721287: I C:\tf_jenkins\workspace\rel-win\M\windows-gpu\PY\35\tensorflow\core\common_runtime\gpu\gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Extracting /tmp/train-images-idx3-ubyte.gz
+Extracting /tmp/train-labels-idx1-ubyte.gz
+Extracting /tmp/t10k-images-idx3-ubyte.gz
+Extracting /tmp/t10k-labels-idx1-ubyte.gz
+X_train shape: (60000, 28, 28, 1)
+X_test shape: (10000, 28, 28, 1)
+Preparing the black-box model.
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans_tutorials\tutorial_models.py:79: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Defined TensorFlow model graph.
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\utils_tf.py:37: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+[INFO 2018-05-28 00:33:46,361 cleverhans] Epoch 0 took 3.6131720542907715 seconds
+[INFO 2018-05-28 00:33:49,015 cleverhans] Epoch 1 took 2.6477859020233154 seconds
+[INFO 2018-05-28 00:33:51,683 cleverhans] Epoch 2 took 2.6619341373443604 seconds
+[INFO 2018-05-28 00:33:54,349 cleverhans] Epoch 3 took 2.660855531692505 seconds
+[INFO 2018-05-28 00:33:56,922 cleverhans] Epoch 4 took 2.5661303997039795 seconds
+[INFO 2018-05-28 00:33:59,486 cleverhans] Epoch 5 took 2.5579068660736084 seconds
+[INFO 2018-05-28 00:34:02,068 cleverhans] Epoch 6 took 2.5764870643615723 seconds
+[INFO 2018-05-28 00:34:04,701 cleverhans] Epoch 7 took 2.6248464584350586 seconds
+[INFO 2018-05-28 00:34:07,273 cleverhans] Epoch 8 took 2.567822217941284 seconds
+[INFO 2018-05-28 00:34:09,856 cleverhans] Epoch 9 took 2.57710599899292 seconds
+[INFO 2018-05-28 00:34:09,856 cleverhans] Completed model training.
+Test accuracy of black-box on legitimate test examples: 0.9873096446700508
+Training the substitute model.
+Defined TensorFlow model graph for the substitute.
+Substitute training epoch #0
+[INFO 2018-05-28 00:34:10,614 cleverhans] Epoch 0 took 0.028957605361938477 seconds
+[INFO 2018-05-28 00:34:10,619 cleverhans] Epoch 1 took 0.005978822708129883 seconds
+[INFO 2018-05-28 00:34:10,624 cleverhans] Epoch 2 took 0.004957675933837891 seconds
+[INFO 2018-05-28 00:34:10,629 cleverhans] Epoch 3 took 0.003988981246948242 seconds
+[INFO 2018-05-28 00:34:10,634 cleverhans] Epoch 4 took 0.003988742828369141 seconds
+[INFO 2018-05-28 00:34:10,640 cleverhans] Epoch 5 took 0.005995273590087891 seconds
+[INFO 2018-05-28 00:34:10,645 cleverhans] Epoch 6 took 0.004976987838745117 seconds
+[INFO 2018-05-28 00:34:10,649 cleverhans] Epoch 7 took 0.003988981246948242 seconds
+[INFO 2018-05-28 00:34:10,655 cleverhans] Epoch 8 took 0.0050258636474609375 seconds
+[INFO 2018-05-28 00:34:10,661 cleverhans] Epoch 9 took 0.0059435367584228516 seconds
+[INFO 2018-05-28 00:34:10,661 cleverhans] Completed model training.
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #1
+[INFO 2018-05-28 00:34:15,044 cleverhans] Epoch 0 took 0.030916452407836914 seconds
+[INFO 2018-05-28 00:34:15,055 cleverhans] Epoch 1 took 0.00897526741027832 seconds
+[INFO 2018-05-28 00:34:15,062 cleverhans] Epoch 2 took 0.006980180740356445 seconds
+[INFO 2018-05-28 00:34:15,072 cleverhans] Epoch 3 took 0.009973526000976562 seconds
+[INFO 2018-05-28 00:34:15,080 cleverhans] Epoch 4 took 0.007979393005371094 seconds
+[INFO 2018-05-28 00:34:15,090 cleverhans] Epoch 5 took 0.009978055953979492 seconds
+[INFO 2018-05-28 00:34:15,098 cleverhans] Epoch 6 took 0.007973194122314453 seconds
+[INFO 2018-05-28 00:34:15,105 cleverhans] Epoch 7 took 0.006981372833251953 seconds
+[INFO 2018-05-28 00:34:15,113 cleverhans] Epoch 8 took 0.007998466491699219 seconds
+[INFO 2018-05-28 00:34:15,120 cleverhans] Epoch 9 took 0.006981372833251953 seconds
+[INFO 2018-05-28 00:34:15,120 cleverhans] Completed model training.
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #2
+[INFO 2018-05-28 00:34:25,966 cleverhans] Epoch 0 took 0.04089689254760742 seconds
+[INFO 2018-05-28 00:34:25,980 cleverhans] Epoch 1 took 0.014954328536987305 seconds
+[INFO 2018-05-28 00:34:25,993 cleverhans] Epoch 2 took 0.012967824935913086 seconds
+[INFO 2018-05-28 00:34:26,015 cleverhans] Epoch 3 took 0.02133631706237793 seconds
+[INFO 2018-05-28 00:34:26,033 cleverhans] Epoch 4 took 0.01695108413696289 seconds
+[INFO 2018-05-28 00:34:26,053 cleverhans] Epoch 5 took 0.01994943618774414 seconds
+[INFO 2018-05-28 00:34:26,066 cleverhans] Epoch 6 took 0.012962579727172852 seconds
+[INFO 2018-05-28 00:34:26,087 cleverhans] Epoch 7 took 0.019947052001953125 seconds
+[INFO 2018-05-28 00:34:26,104 cleverhans] Epoch 8 took 0.015955448150634766 seconds
+[INFO 2018-05-28 00:34:26,120 cleverhans] Epoch 9 took 0.015957355499267578 seconds
+[INFO 2018-05-28 00:34:26,121 cleverhans] Completed model training.
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #3
+[INFO 2018-05-28 00:34:55,151 cleverhans] Epoch 0 took 0.05788421630859375 seconds
+[INFO 2018-05-28 00:34:55,174 cleverhans] Epoch 1 took 0.02290058135986328 seconds
+[INFO 2018-05-28 00:34:55,195 cleverhans] Epoch 2 took 0.019936323165893555 seconds
+[INFO 2018-05-28 00:34:55,215 cleverhans] Epoch 3 took 0.019955873489379883 seconds
+[INFO 2018-05-28 00:34:55,242 cleverhans] Epoch 4 took 0.025930166244506836 seconds
+[INFO 2018-05-28 00:34:55,266 cleverhans] Epoch 5 took 0.022922992706298828 seconds
+[INFO 2018-05-28 00:34:55,291 cleverhans] Epoch 6 took 0.023941993713378906 seconds
+[INFO 2018-05-28 00:34:55,313 cleverhans] Epoch 7 took 0.022933006286621094 seconds
+[INFO 2018-05-28 00:34:55,341 cleverhans] Epoch 8 took 0.026934385299682617 seconds
+[INFO 2018-05-28 00:34:55,362 cleverhans] Epoch 9 took 0.019968509674072266 seconds
+[INFO 2018-05-28 00:34:55,362 cleverhans] Completed model training.
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #4
+[INFO 2018-05-28 00:36:25,168 cleverhans] Epoch 0 took 0.09503912925720215 seconds
+[INFO 2018-05-28 00:36:25,241 cleverhans] Epoch 1 took 0.07280826568603516 seconds
+[INFO 2018-05-28 00:36:25,312 cleverhans] Epoch 2 took 0.07080721855163574 seconds
+[INFO 2018-05-28 00:36:25,382 cleverhans] Epoch 3 took 0.06981611251831055 seconds
+[INFO 2018-05-28 00:36:25,446 cleverhans] Epoch 4 took 0.0638270378112793 seconds
+[INFO 2018-05-28 00:36:25,515 cleverhans] Epoch 5 took 0.06804490089416504 seconds
+[INFO 2018-05-28 00:36:25,575 cleverhans] Epoch 6 took 0.059838294982910156 seconds
+[INFO 2018-05-28 00:36:25,624 cleverhans] Epoch 7 took 0.04787111282348633 seconds
+[INFO 2018-05-28 00:36:25,689 cleverhans] Epoch 8 took 0.06383585929870605 seconds
+[INFO 2018-05-28 00:36:25,761 cleverhans] Epoch 9 took 0.0718076229095459 seconds
+[INFO 2018-05-28 00:36:25,761 cleverhans] Completed model training.
+Augmenting substitute training data.
+Labeling substitute training data.
+Substitute training epoch #5
+[INFO 2018-05-28 00:42:15,157 cleverhans] Epoch 0 took 0.16458916664123535 seconds
+[INFO 2018-05-28 00:42:15,278 cleverhans] Epoch 1 took 0.12068843841552734 seconds
+[INFO 2018-05-28 00:42:15,404 cleverhans] Epoch 2 took 0.12363457679748535 seconds
+[INFO 2018-05-28 00:42:15,531 cleverhans] Epoch 3 took 0.1266627311706543 seconds
+[INFO 2018-05-28 00:42:15,639 cleverhans] Epoch 4 took 0.10870766639709473 seconds
+[INFO 2018-05-28 00:42:15,763 cleverhans] Epoch 5 took 0.12267208099365234 seconds
+[INFO 2018-05-28 00:42:15,904 cleverhans] Epoch 6 took 0.13863229751586914 seconds
+[INFO 2018-05-28 00:42:16,030 cleverhans] Epoch 7 took 0.1266615390777588 seconds
+[INFO 2018-05-28 00:42:16,142 cleverhans] Epoch 8 took 0.11069130897521973 seconds
+[INFO 2018-05-28 00:42:16,277 cleverhans] Epoch 9 took 0.1336824893951416 seconds
+[INFO 2018-05-28 00:42:16,277 cleverhans] Completed model training.
+WARNING:tensorflow:From c:\users\hde\documents\2018\summer2018\src\cleverhans\cleverhans\attacks.py:208: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+Test accuracy of oracle on adversarial examples generated using the substitute: 0.6468020304568528
