@@ -10,3 +10,8 @@ Towards Deep Learning Models Resistant to Adversarial Attacks
 https://arxiv.org/pdf/1706.06083.pdf
 https://github.com/tensorflow/cleverhans/tree/master/examples/multigpu_advtrain
 https://people.csail.mit.edu/madry/lab/
+
+
+REGULARIZATION
+http://work.caltech.edu/slides/slides12.pdf (SLIDE 14)
+https://www.youtube.com/watch?v=I-VfYXzC5ro&hd=1#t=44m08s
