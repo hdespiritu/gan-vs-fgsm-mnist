@@ -1,0 +1,54 @@
+
+(1)mnist generate data
+
+(2)word2vec (how it lexes phrases?)
+
+(3)Char-CNN
+(Might be useful?)
+
+Zhang CNN for character-level classification (DBPedia)
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/learn/text_classification_character_cnn.py
+
+Zhang RNN for character-level classification (DBPedia)
+https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/learn/text_classification_character_rnn.py
+
+
+https://github.com/tensorflow/models/tree/master/research/adversarial_text
+
+-used spam/ham dataset (spam assassin-subject&body,but no header) for network data character strings (1-dimensional time series)
+-Minimize # of chars changed to cause misclassification
+
+Considerations:
+-Using FGSM approach, robustnes against adversarial attack is same as increasing minimum perturbation required to cause
+misclassification.
+
+-Consider in SVM, we use quadratic programming to solve for lagrange multipliers. Try using SGD to find Lagrange mults
+ that maximize classification boundary to make NN more robust agaist adversarial examples
+
+
+
+SVM:
+
+PROGESS:
+
+Rewatched MIT "16. Learning: Support Vector Machines"
+https://www.youtube.com/watch?v=_PwhiWxHK8o
+
+Watched Caltech "Lecture 12 (Regularization)"
+http://www.youtube.com/watch?v=I-VfYXzC5ro&hd=1#t=4m38s
+http://work.caltech.edu/slides/slides12.pdf
+
+Watched Caltech "Lecture 14 (Support Vector Machines)"
+http://www.youtube.com/watch?v=eHsErlPJWUU&hd=1#t=4m11s
+http://work.caltech.edu/slides/slides14.pdf
+
+
+TODO:
+Lecture 15 (Kernel Methods) 
+http://www.youtube.com/watch?v=XUj5JbQihlU&hd=1#t=5m57s
+http://work.caltech.edu/slides/slides15.pdf
+
+Lecture 16 (Radial Basis Functions) 
+http://www.youtube.com/watch?v=O8CfrnOPtLc&hd=1#t=5m5s
+http://work.caltech.edu/slides/slides16.pdf
+
