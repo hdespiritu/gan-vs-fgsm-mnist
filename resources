@@ -13,5 +13,7 @@ https://people.csail.mit.edu/madry/lab/
 
 
 REGULARIZATION
-http://work.caltech.edu/slides/slides12.pdf (SLIDE 14)
-https://www.youtube.com/watch?v=I-VfYXzC5ro&hd=1#t=44m08s
+http://work.caltech.edu/slides/slides12.pdf 
+  (SLIDE 13/21) Weight Decay
+                https://www.youtube.com/watch?v=I-VfYXzC5ro&hd=1#t=44m08s
+  (SLIDE 14/21) Variations of Weight Decay (Tikhonov Regularizer)
