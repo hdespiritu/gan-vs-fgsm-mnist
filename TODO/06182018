@@ -1,0 +1,47 @@
+GAN Models/Blackbox Adversariaal Training
+
+TFGAN
+https://github.com/tensorflow/models/tree/master/research/gan
+DCGAN
+https://github.com/awjuliani/TF-Tutorials/blob/master/DCGAN.ipynb
+Deep WordBug
+https://www.youtube.com/watch?v=Ho3V_eACoSQ
+LeakGAN
+https://github.com/CR-Gjx/LeakGAN/tree/master/Image%20COCO
+Progressive Growing GAN
+https://github.com/tkarras/progressive_growing_of_gans?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+DeepLearn
+https://github.com/GauravBh1010tt/DeepLearn?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+GluoNLP
+https://github.com/dmlc/gluon-nlp?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+
+Datasets
+Cornell Movie Dialogs
+https://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html
+Microsoft Social Media Conversation
+https://www.microsoft.com/en-us/download/details.aspx?id=52375&from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2F6096d3da-0c3b-42fa-a480-646929aa06f1%2F
+Ubuntu Corpus
+https://github.com/rkadlec/ubuntu-ranking-dataset-creator
+CoLA
+https://nyu-mll.github.io/CoLA/
+Facebook Babl
+https://research.fb.com/downloads/babi/
+Stanford Sentiment Analysis Corpus
+https://nlp.stanford.edu/sentiment/index.html
+Microsoft Paraphrase Corpus
+https://www.microsoft.com/en-us/download/details.aspx?id=52398
+STS Benchmark
+http://ixa2.si.ehu.es/stswiki/index.php/STSbenchmark
+Quora Question Pairs
+https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs
+Multi-Genre Natural Language Inference
+http://www.nyu.edu/projects/bowman/multinli/
+Stanford Question Answering Dataset
+https://rajpurkar.github.io/SQuAD-explorer/
+Recognizing Textual Entailment
+https://aclweb.org/aclwiki/Recognizing_Textual_Entailment
+Winograd Schema
+https://cs.nyu.edu/faculty/davise/papers/WinogradSchemas/WS.html
+UCI Text datasets
+https://archive.ics.uci.edu/ml/datasets.html?area=&att=&format=&numAtt=&numIns=&sort=nameUp&task=&type=text&view=table
