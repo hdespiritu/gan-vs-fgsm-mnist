@@ -8,5 +8,6 @@ https://github.com/keras-team/keras/issues/3159
 https://github.com/keras-team/keras/issues/1627
 https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly.html
 
-How to get strings from rcv1?
-http://www.ai.mit.edu/projects/jmlr/papers/volume5/lewis04a/lyrl2004_rcv1v2_README.htm
+label smoothing
+https://www.quora.com/How-do-you-handle-outliers-and-label-noise-when-training-a-deep-neural-network
+https://github.com/Kyubyong/label_smoothing.git
