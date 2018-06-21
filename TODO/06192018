@@ -6,7 +6,15 @@ https://keras.io/preprocessing/image/
 https://github.com/Lasagne/Lasagne/issues/615
 https://github.com/keras-team/keras/issues/3159
 https://github.com/keras-team/keras/issues/1627
+
 https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly.html
+None of the below imports work for Keras 2.0.5?
+(from keras.utils import Sequence)
+(from keras.utils.data_utils import Sequence)
+
+Try this instead?
+https://www.tensorflow.org/programmers_guide/datasets#consuming_tfrecord_data
+
 
 label smoothing
 https://www.quora.com/How-do-you-handle-outliers-and-label-noise-when-training-a-deep-neural-network
