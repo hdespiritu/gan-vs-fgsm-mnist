@@ -13,8 +13,7 @@ None of the below imports work for Keras 2.0.5?
 (from keras.utils.data_utils import Sequence)
 
 Try this instead?
-https://www.tensorflow.org/programmers_guide/datasets#consuming_tfrecord_data
-
+https://www.tensorflow.org/programmers_guide/datasets#consuming_text_data
 
 label smoothing
 https://www.quora.com/How-do-you-handle-outliers-and-label-noise-when-training-a-deep-neural-network
