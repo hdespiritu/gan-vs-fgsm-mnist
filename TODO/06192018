@@ -1,6 +1,12 @@
 High performance data pipelines
 http://adventuresinmachinelearning.com/tensorflow-dataset-tutorial/
 https://www.tensorflow.org/performance/datasets_performance
+https://www.tensorflow.org/performance/performance_guide
+https://www.tensorflow.org/performance/
+https://stackoverflow.com/questions/38455548/how-can-i-pick-specific-records-in-tensorflow-from-a-tfrecords-file
+https://stackoverflow.com/questions/34258043/getting-good-mixing-with-many-input-datafiles-in-tensorflow
+https://stackoverflow.com/questions/35657015/tfrecords-and-record-shuffling
+https://stackoverflow.com/questions/46178880/train-and-test-with-tfrecord-data
 
 Important info on preprocessing for data that cannot all fit in memory (Tensorflow & Keras)
 https://stackoverflow.com/questions/48889482/feeding-npy-numpy-files-into-tensorflow-data-pipeline
