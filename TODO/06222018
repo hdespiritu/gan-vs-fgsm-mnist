@@ -1,0 +1,33 @@
+
+
+
+
+
+Datasets
+
+Ubuntu Corpus (1,000,000 examples??)
+https://github.com/rkadlec/ubuntu-ranking-dataset-creator
+
+***Quora Question Pairs (400,000 question-pair examples)
+https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs
+
+***Multi-Genre Natural Language Inference (400,000)
+http://www.nyu.edu/projects/bowman/multinli/
+
+Stanford Question Answering Dataset (150,000)
+https://rajpurkar.github.io/SQuAD-explorer/
+
+TFGAN
+https://github.com/tensorflow/models/tree/master/research/gan
+DCGAN
+https://github.com/awjuliani/TF-Tutorials/blob/master/DCGAN.ipynb
+Deep WordBug
+https://www.youtube.com/watch?v=Ho3V_eACoSQ
+LeakGAN
+https://github.com/CR-Gjx/LeakGAN/tree/master/Image%20COCO
+Progressive Growing GAN
+https://github.com/tkarras/progressive_growing_of_gans?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+DeepLearn
+https://github.com/GauravBh1010tt/DeepLearn?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+GluoNLP
+https://github.com/dmlc/gluon-nlp?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
