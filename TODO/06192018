@@ -1,5 +1,6 @@
 Important info on preprocessing for data that cannot all fit in memory (Tensorflow & Keras)
 https://stackoverflow.com/questions/48889482/feeding-npy-numpy-files-into-tensorflow-data-pipeline
+https://stackoverflow.com/questions/46820500/how-to-handle-large-amouts-of-data-in-tensorflow/47040165#47040165
 
 Combine Datasets
 ***https://github.com/keras-team/keras/issues/8130
