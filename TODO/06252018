@@ -8,6 +8,7 @@
   LeakGAN (very slow, reinforcement learning based adversarial examples)
   rnn.wgan (already was attempted and apparently not great)
   seqgan-text-tensorflow (requires tensorflow 1.0)
+    -see (https://github.com/Currie32/Chatbot-from-Movie-Dialogue/issues/7)
 
 -Translation???
   Sogou, NMT checkpoints
