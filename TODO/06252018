@@ -3,6 +3,11 @@
 
 -GAN data
   TFGAN, MaskGAN, etc
+  
+  Attempted:
+  LeakGAN (very slow, reinforcement learning based adversarial examples)
+  rnn.wgan (already was attempted and apparently not great)
+  seqgan-text-tensorflow (requires tensorflow 1.0)
 
 -Translation???
   Sogou, NMT checkpoints
