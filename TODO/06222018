@@ -25,6 +25,9 @@ http://www.nyu.edu/projects/bowman/multinli/
 Stanford Question Answering Dataset (150,000)
 https://rajpurkar.github.io/SQuAD-explorer/
 
+Other Ideas
+https://stackoverflow.com/questions/32246702/large-classification-document-corpus
+
 TFGAN
 https://github.com/tensorflow/models/tree/master/research/gan
 DCGAN
