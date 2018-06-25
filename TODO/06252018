@@ -13,3 +13,7 @@
 -Translation???
   Sogou, NMT checkpoints
   Tensorflow alternatives??
+
+-Interesting Read for data generation
+(see if there's something similar for tfrecords???)
+https://techblog.appnexus.com/a-keras-multithreaded-dataframe-generator-for-millions-of-image-files-84d3027f6f43
