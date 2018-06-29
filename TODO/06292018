@@ -13,3 +13,4 @@ https://stackoverflow.com/questions/3033952/threading-pool-similar-to-the-multip
 -speed up confusion matrix generation (currently slows down training alot)
 -plotting ROC curve for test (& train?) steps
   Note: related to changing confidence levels
+-Other useful visualizations? (need to be fast to generate or at least not slow down training, ie possible to generate from data saved in checkpoint?)
